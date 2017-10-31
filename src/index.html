@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Small app - Kingfisher</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:100,300,400,500,700,900" rel="stylesheet">
+</head>
+
+<body>
+    <!-- page header -->
+    <header class="page_header">
+        <div class="header_row">
+            <p class="gm">
+                <span class="g">Good</span>
+                <span id="timeNow" class="m">Morning</span>
+            </p>
+            <p class="tk">
+                <span class="t">Team</span>
+                <span class="k">Kingfisher</span>
+            </p>
+        </div>
+        <!-- collapsed burger menu -->
+        <div id="burger_menu_icon" class="burger_menu_icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <span id="xMenuBtn" class="close_menu_btn hide">x</span>
+    </header>
+
+    <div class="page_body">
+        <!-- navigation menu -->
+        <nav id="mainNav" class="main_nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="https://www.linkedin.com/in/mohammednashashibi/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://medium.com/" target="_blank">Resources</a></li>
+            </ul>
+        </nav>
+        
+        <!-- main container -->
+        <main class="main_container">
+            <!-- cards section -->
+            <section class="cards_container">
+                <div id="card_1" class="card_1"> 
+                    <div class="front-flipper"> 
+                        <article class="card">
+                            <header>
+                                <div class="card_head_stripe"></div>
+                                <div class="card_img">
+                                    <img src="./img/nash_bw.jpg" alt="Mohammad Nashashibi">
+                                </div>
+                            </header>
+                            <h4>Mohammad Nashashibi</h4>
+                            <p>Click on the LinkedIn icon to view my CV, or <a href="./src/files/CV_Mohammad_Nashashibi_0917.pdf" target="_blank">click here</a> to download and save a .pdf version of it.</p>
+                            <div class="social_icons">
+                                <span class="social social_fb" data-target="fb"></span>
+                                <span class="social social_in" data-target="in"></span>
+                            </div>
+                            <button id="flipCard_1_btn" type="button" class="btn btn-default btn-sm">
+                              <span class="glyphicon glyphicon-repeat"></span> Flip to view key skills
+                            </button>
+                        </article>
+                    </div> 
+                    <div class="back-flipper">
+                        <header>
+                            <h3>Skills overview</h3>
+                            <h5>Senior UI/UX Designer, Front-end Developer</h5>
+                        </header>
+                        <div id="bars" class="content">
+                            <!-- dynamic data from JS -->
+                        </div>
+                        <button id="unflipCard_1_btn" type="button" class="btn btn-default btn-sm unflip_btn">
+                          <span class="glyphicon glyphicon-repeat"></span> Back
+                        </button>
+                    </div> 
+                </div>
+
+                <div class="card card_2">
+                    <article>
+                        <h4>Learning Resources</h4>
+                        <p>You will find in the article below links to more resources which where I get latest updates from.</p>
+                        <button id="readArticle" class="gen_btn">Read article</button>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Pig Latin Translator -->
+            <section class="translator_section">
+                <h1>Pig Latin Translator</h1>
+                <div class="content">
+                    <div class="inputs_container">
+                        <div id="userAlerts" class="user_alerts"></div>
+                        <button id="clearTxt" type="button" class="close clear_txt" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                        <textarea id="en" class="textarea" placeholder="Write somthing..."></textarea>
+                        <button class="gen_btn translation_btn" id="translationBtn">Translate</button>
+                    </div>
+                    <div id="output" class="output">Translation will show here...</div>
+                </div>
+                <article id="resourcesArticle" class="main_aricle">
+                    <h1>How do I keep myself updated?</h1>
+                    <p>
+                        Google is where I always start when looking for something in specific of course, but there are some 
+                        really talented people out there worth following.
+                    </p>
+
+                    <p>
+                        I am subscribed to YouTube channels like this one here <a href="https://www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q" target="_blank">MPJ - FunFunFuncation series</a> for learning JavaScript. I do
+                        love JavaScript that's why most of the channels and people I follow are mainly concerned with JavaScript.
+                    </p>
+
+                    <p>
+                        Twitter gives me a sneak-peak all day long so I know what I need to read about or research later on. Some of the
+                        accounts I follow are: <a href="https://twitter.com/addyosmani" target="_blank">Addy Osmani</a> who works as a software engineer at Google, 
+                        <a href="https://twitter.com/ThePracticalDev" target="_blank">The Practical Dev</a>, and <a href="https://twitter.com/maxedapps" target="_blank">Maximilian Schwarzmüller</a>
+                        as I love his way of teaching. I take courses with him on Udemy.com whenever I find one is available.
+                    </p>
+
+                    <p>
+                        I read a lot of articles on <a href="https://medium.com/" target="_blank">Medium</a>, <a href="https://news.ycombinator.com/" target="_blank">Hacker News</a> sometimes, and I like 
+                        <a href="https://www.reddit.com/" target="_blank">Reddit</a>, it has a lot of channels that you can subscribe to and many more.
+                    </p>
+
+                    <p>
+                        I mean the list can go on but that's how keep up to date in a nutshell as much as I can, at the end you know the industry
+                        is challenging and requires a lot of work to keep up with.
+                    </p>
+
+                    <p>
+                        I hope you like this small app. I look forward to hearing from you.
+                    </p>
+                </article>
+            </section>
+        </main>
+    </div>
+    <!-- footer -->
+    <footer class="main_footer">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <p>&copy; No rights reserved! &#x263A;</p>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 soc">
+                <span class="social social_in" data-target="in"></span>
+                <span class="social social_fb" data-target="fb"></span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
